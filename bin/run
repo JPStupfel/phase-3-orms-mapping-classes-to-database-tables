@@ -3,5 +3,9 @@
 require 'pry'
 require_relative '../config/environment'
 
+Song.create_table
+fish = Song.new( name: 'Fish',  album: 'Record')
+fish.save
+
 binding.pry
 "pls"
